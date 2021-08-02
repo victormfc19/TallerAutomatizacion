@@ -1,1 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="0" name="As a user of Guru page" skipped="2" tests="3" time="35.27" timestamp="2021-08-01 04:48:17"><testcase name="Create customer"/><testcase name="Create an account"><skipped/></testcase><testcase name="Delete the account and verify it is deleted"><skipped/></testcase></testsuite>
