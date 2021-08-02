@@ -1,0 +1,10 @@
+ @Before
+    public void setUp(){
+        setTheStage(new OnlineCast());
+        theActorCalled("user");
+    }
+
+
+     theActorInTheSpotlight().can(BrowseTheWeb.with(Driver.getDriver().openUrl("http://demo.guru99.com/V4/index.php")));
+        theActorInTheSpotlight().attemptsTo(Login.inThePage());
+        theActorInTheSpotlight().should(seeThat(ValidateMessage.withID(), Matchers.is("Manger Id : mngr344737")));

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="As a user of Guru page" tests="3" skipped="0" failures="0" errors="0" timestamp="2021-08-01T21:48:17" hostname="50HW018340" time="35.953">
+  <properties/>
+  <testcase name="Create customer" classname="As a user of Guru page" time="35.927"/>
+  <testcase name="Create an account" classname="As a user of Guru page" time="0.002"/>
+  <testcase name="Delete the account and verify it is deleted" classname="As a user of Guru page" time="0.002"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[Aug 01, 2021 4:48:18 PM org.openqa.selenium.remote.DesiredCapabilities chrome
+INFO: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
+Starting ChromeDriver 91.0.4472.101 (af52a90bf87030dd1523486a1cd3ae25c5d76c9b-refs/branch-heads/4472@{#1462}) on port 21284
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+[1627854501.735][WARNING]: This version of ChromeDriver has not been tested with Chrome version 92.
+Aug 01, 2021 4:48:21 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+</testsuite>
