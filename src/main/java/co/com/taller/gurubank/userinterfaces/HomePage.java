@@ -8,4 +8,7 @@ public class HomePage {
             .locatedBy("//td[contains(text(),'mngr344737')]");
     public static final Target SELECT_NEWCUSTOMER = Target.the("select new customer")
             .locatedBy("//a[contains(text(),'New Customer')]");
+    public static final Target SELECT_NEWACCOUNT = Target.the("select new account")
+            .locatedBy("//a[contains(text(),'New Account')]");
+
 }
