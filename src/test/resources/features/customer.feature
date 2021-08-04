@@ -15,5 +15,5 @@ Feature: As a user of Guru page
       When user creates an account
       Then user verifies the message the account has been create correctly
 
-    Scenario: Delete the account and verify it is deleted
+    #Scenario: Delete the account and verify it is deleted
 
