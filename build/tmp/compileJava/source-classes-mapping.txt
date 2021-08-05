@@ -1,0 +1,36 @@
+co/com/taller/gurubank/interactions/Wait.java
+ co.com.taller.gurubank.interactions.Wait
+co/com/taller/gurubank/questions/ValidateMessage.java
+ co.com.taller.gurubank.questions.ValidateMessage
+co/com/taller/gurubank/userinterfaces/NewAccountPage.java
+ co.com.taller.gurubank.userinterfaces.NewAccountPage
+co/com/taller/gurubank/util/Const.java
+ co.com.taller.gurubank.util.Const
+co/com/taller/gurubank/questions/AccountAlert.java
+ co.com.taller.gurubank.questions.AccountAlert
+co/com/taller/gurubank/userinterfaces/AccountCreatedPage.java
+ co.com.taller.gurubank.userinterfaces.AccountCreatedPage
+co/com/taller/gurubank/tasks/Create.java
+ co.com.taller.gurubank.tasks.Create
+co/com/taller/gurubank/userinterfaces/DeleteAccountPage.java
+ co.com.taller.gurubank.userinterfaces.DeleteAccountPage
+co/com/taller/gurubank/tasks/Delete.java
+ co.com.taller.gurubank.tasks.Delete
+co/com/taller/gurubank/userinterfaces/LoginPage.java
+ co.com.taller.gurubank.userinterfaces.LoginPage
+co/com/taller/gurubank/util/OperacionArchivo.java
+ co.com.taller.gurubank.util.OperacionArchivo
+co/com/taller/gurubank/userinterfaces/HomePage.java
+ co.com.taller.gurubank.userinterfaces.HomePage
+co/com/taller/gurubank/userinterfaces/NewCustomerPage.java
+ co.com.taller.gurubank.userinterfaces.NewCustomerPage
+co/com/taller/gurubank/userinterfaces/CustomerRegisteredPage.java
+ co.com.taller.gurubank.userinterfaces.CustomerRegisteredPage
+co/com/taller/gurubank/tasks/NewCustomer.java
+ co.com.taller.gurubank.tasks.NewCustomer
+co/com/taller/gurubank/tasks/Login.java
+ co.com.taller.gurubank.tasks.Login
+co/com/taller/gurubank/questions/AccountGenerated.java
+ co.com.taller.gurubank.questions.AccountGenerated
+co/com/taller/gurubank/questions/Registered.java
+ co.com.taller.gurubank.questions.Registered

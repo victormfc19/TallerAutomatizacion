@@ -1,0 +1,4 @@
+co/com/taller/gurubank/runners/CustomerRunner.java
+ co.com.taller.gurubank.runners.CustomerRunner
+co/com/taller/gurubank/stepdefinitions/CustomerStepDefinitions.java
+ co.com.taller.gurubank.stepdefinitions.CustomerStepDefinitions

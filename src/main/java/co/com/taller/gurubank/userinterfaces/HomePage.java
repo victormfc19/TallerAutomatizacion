@@ -10,5 +10,6 @@ public class HomePage {
             .locatedBy("//a[contains(text(),'New Customer')]");
     public static final Target SELECT_NEWACCOUNT = Target.the("select new account")
             .locatedBy("//a[contains(text(),'New Account')]");
-
+    public static final Target SELECT_DELETE_ACCOUNT = Target.the("select delete account")
+            .locatedBy("//a[contains(text(),'Delete Account')]");
 }
