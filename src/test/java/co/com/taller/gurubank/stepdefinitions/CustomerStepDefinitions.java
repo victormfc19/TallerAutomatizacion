@@ -8,11 +8,13 @@ import co.com.taller.gurubank.tasks.Create;
 import co.com.taller.gurubank.tasks.Delete;
 import co.com.taller.gurubank.tasks.Login;
 import co.com.taller.gurubank.tasks.NewCustomer;
+import co.com.taller.gurubank.util.Driver;
 import co.com.taller.gurubank.util.OperacionArchivo;
 import cucumber.api.java.Before;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
+import net.serenitybdd.screenplay.abilities.BrowseTheWeb;
 import net.serenitybdd.screenplay.actions.Open;
 import net.serenitybdd.screenplay.actors.OnStage;
 import net.serenitybdd.screenplay.actors.OnlineCast;
@@ -32,6 +34,7 @@ public class CustomerStepDefinitions {
     private String customer_id;
     private String account_id;
     private String account_number;
+
     @Managed(driver = "chrome")
     WebDriver hisdriver;
 
@@ -46,7 +49,6 @@ public class CustomerStepDefinitions {
         theActorInTheSpotlight().wasAbleTo(Open.url("http://demo.guru99.com/V4/index.php"));
         theActorInTheSpotlight().attemptsTo(Login.inThePage());
         theActorInTheSpotlight().should(seeThat(ValidateMessage.withID(), Matchers.is("Manger Id : mngr344737")));
-
     }
 
     @When("^user creates a customer$")
@@ -85,7 +87,8 @@ public class CustomerStepDefinitions {
 
     @When("^user select delete account$")
     public void userSelectDeleteAccount() {
-        account_number = OperacionArchivo.leerArchivo();
+        //account_number = OperacionArchivo.leerArchivo();
+        account_number = "95705";
         theActorInTheSpotlight().attemptsTo(
                 Delete.anAccount(account_number)
         );

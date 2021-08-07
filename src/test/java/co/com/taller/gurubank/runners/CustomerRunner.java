@@ -8,7 +8,8 @@ import org.junit.runner.RunWith;
 @RunWith(CucumberWithSerenity.class)
 @CucumberOptions( features = "src/test/resources/features/customer.feature",
                   glue = "co.com.taller.gurubank.stepdefinitions" ,
-                  snippets = SnippetType.CAMELCASE
+                  snippets = SnippetType.CAMELCASE,
+                  tags = "@DeleteAccount"
                 )
 public class CustomerRunner {
 }

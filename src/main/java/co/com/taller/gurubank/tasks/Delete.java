@@ -1,11 +1,23 @@
 package co.com.taller.gurubank.tasks;
 
 import co.com.taller.gurubank.interactions.Wait;
+import co.com.taller.gurubank.util.Driver;
 import net.serenitybdd.screenplay.Actor;
+import net.serenitybdd.screenplay.Performable;
 import net.serenitybdd.screenplay.Task;
 import net.serenitybdd.screenplay.abilities.BrowseTheWeb;
 import net.serenitybdd.screenplay.actions.Click;
 import net.serenitybdd.screenplay.actions.Enter;
+import net.serenitybdd.screenplay.actions.Hit;
+import net.serenitybdd.screenplay.actions.SendKeys;
+import net.serenitybdd.screenplay.actors.OnStage;
+import net.serenitybdd.screenplay.waits.WaitUntil;
+import org.openqa.selenium.Alert;
+import org.openqa.selenium.Keys;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+import java.util.function.Function;
 
 import static co.com.taller.gurubank.userinterfaces.HomePage.SELECT_DELETE_ACCOUNT;
 import static co.com.taller.gurubank.userinterfaces.DeleteAccountPage.*;
@@ -26,7 +38,8 @@ public class Delete implements Task {
                 Enter.theValue(account_number).into(INPUT_ACCOUNT_NUMBER),
                 Click.on(SUBMIT_BUTTON_DELETE)
         );
-        BrowseTheWeb.as(actor).getDriver().switchTo().alert().accept();
+        Alert alert = BrowseTheWeb.as(actor).getDriver().switchTo().alert();
+        alert.accept();
     }
 
     public static Delete anAccount(String account_number){

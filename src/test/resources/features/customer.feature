@@ -15,6 +15,8 @@ Feature: As a user of Guru page
       When user creates an account
       Then user verifies the message the account has been create correctly
 
+
+    @DeleteAccount
     Scenario: Delete an account
       When user select delete account
       Then user verifies the message the account has been deleted successfully
